@@ -1,0 +1,7 @@
+*.substvars
+
+debian/*.debhelper
+debian/*.log
+debian/files
+debian/debhelper-build-stamp
+debian/mobian-tweaks

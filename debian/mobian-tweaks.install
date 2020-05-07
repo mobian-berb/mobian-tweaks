@@ -1,0 +1,8 @@
+tweaks/applications usr/share
+tweaks/firefox-esr usr/lib
+tweaks/90_mobian.gschema.override usr/share/glib-2.0/schemas
+tweaks/90-usb-gadget-managed.rules usr/lib/udev/rules.d
+tweaks/ignore-power-key.conf etc/systemd/logind.conf.d
+tweaks/mobian-tweaks.sh etc/profile.d
+tweaks/mobian.json usr/share/feedbackd/themes/
+tweaks/org.freedesktop.ModemManager1.pkla var/lib/polkit-1/localauthority/10-vendor.d/

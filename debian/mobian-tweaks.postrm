@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+if [ remove = "$1" -o abort-install = "$1" -o disappear = "$1" ]
+then
+    for app in debian-uxterm debian-xterm firefox-esr htop sm.puri.OSK0 \
+               telegramdesktop vim
+    do
+        dpkg-divert --package mobian-tweaks --remove --rename \
+                    --divert /usr/share/applications/$app.desktop.orig \
+                    /usr/share/applications/$app.desktop
+    done
+fi

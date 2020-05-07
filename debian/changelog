@@ -1,0 +1,5 @@
+mobian-tweaks (0.1.0) unstable; urgency=medium
+
+  * Initial release based on `pinephone-tweaks` v0.14
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Thu, 07 May 2020 12:30:50 +0200
