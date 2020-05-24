@@ -1,3 +1,11 @@
+mobian-tweaks (0.1.2) unstable; urgency=medium
+
+  * tweaks: change feedback theme for new feedbackd version
+  * firefox-esr: use more standard user-agent
+  * firefox-esr: add youtube-specific user-agent override
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Mon, 25 May 2020 01:23:40 +0200
+
 mobian-tweaks (0.1.1) unstable; urgency=medium
 
   * tweaks: automount SD when inserted
