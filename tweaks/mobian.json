@@ -65,12 +65,12 @@
         {
           "event-name" : "bell-terminal",
           "type"       : "VibraRumble",
-          "duration"   : 250
+          "duration"   : 100
         },
         {
           "event-name" : "button-pressed",
           "type"       : "VibraRumble",
-          "duration"   : 100
+          "duration"   : 60
         },
         {
           "event-name" : "message-new-email",
@@ -120,7 +120,7 @@
         {
           "event-name" : "window-close",
           "type"       : "VibraRumble",
-          "duration"   : 200
+          "duration"   : 75
         }
       ]
     },
