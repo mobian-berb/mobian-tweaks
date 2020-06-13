@@ -1,3 +1,10 @@
+mobian-tweaks (0.1.5) unstable; urgency=medium
+
+  [ Tomasz Oponowicz ]
+  * Disable Gnome animations
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Sat, 13 Jun 2020 15:54:27 +0200
+
 mobian-tweaks (0.1.4) unstable; urgency=medium
 
   * tweaks: lighten vibration on button-pressed and window-closed events
