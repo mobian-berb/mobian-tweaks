@@ -24,3 +24,6 @@ photo-x-resolution=1280
 photo-y-resolution=960
 video-x-resolution=1280
 video-y-resolution=960
+
+[org.gnome.desktop.interface]
+enable-animations=false
