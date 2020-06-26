@@ -1,3 +1,9 @@
+mobian-tweaks (0.1.6) unstable; urgency=medium
+
+  * 99-automount-sd: only mount when accessed
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Fri, 26 Jun 2020 16:44:49 +0200
+
 mobian-tweaks (0.1.5) unstable; urgency=medium
 
   [ Tomasz Oponowicz ]
