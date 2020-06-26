@@ -1,3 +1,13 @@
+mobian-tweaks (0.1.7) unstable; urgency=medium
+
+  [ Tomasz Oponowicz ]
+  * Improve Firefox UI and performance
+
+  [ Arnaud Ferraris ]
+  * firefox-esr: keep standard homepage and revert to "compact" UI density
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Fri, 26 Jun 2020 17:03:00 +0200
+
 mobian-tweaks (0.1.6) unstable; urgency=medium
 
   * 99-automount-sd: only mount when accessed
