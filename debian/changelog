@@ -1,3 +1,9 @@
+mobian-tweaks (0.1.8) unstable; urgency=medium
+
+  * 90_mobian.gschema: disable auto-brightness and enable auto-suspend
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Sat, 27 Jun 2020 11:16:18 +0200
+
 mobian-tweaks (0.1.7) unstable; urgency=medium
 
   [ Tomasz Oponowicz ]
