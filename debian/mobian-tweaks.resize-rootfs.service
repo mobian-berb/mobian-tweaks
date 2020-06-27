@@ -1,0 +1,10 @@
+[Unit]
+Description=Resize root filesystem
+Requires=-.mount
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/resize-rootfs
+
+[Install]
+WantedBy=local-fs.target
