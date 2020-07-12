@@ -1,3 +1,11 @@
+mobian-tweaks (0.2.0) unstable; urgency=medium
+
+  * mobian.json: update feedbackd profile
+  * 90_mobian.gschema: fix auto-suspend
+  * tweaks: add dconf defaults for auto-scaling widely used apps
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Sun, 12 Jul 2020 16:19:02 +0200
+
 mobian-tweaks (0.1.9) unstable; urgency=medium
 
   * tweaks: resize rootfs on first boot
