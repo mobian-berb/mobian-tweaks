@@ -11,6 +11,7 @@ Vcs-Browser: https://gitlab.com/mobian1/mobian-tweaks
 Package: mobian-tweaks
 Architecture: all
 Depends: dconf-gsettings-backend | gsettings-backend,
+         dconf-cli,
          ${misc:Depends}
 Description: Special tweaks for Mobian
  Additional configuration files for Mobian, including:

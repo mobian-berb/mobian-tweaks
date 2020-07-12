@@ -1,0 +1,14 @@
+[sm/puri/phoc/application/firefox]
+scale-to-fit=true
+
+[sm/puri/phoc/application/firefox-esr]
+scale-to-fit=true
+
+[sm/puri/phoc/application/geary]
+scale-to-fit=true
+
+[sm/puri/phoc/application/gnome-calendar]
+scale-to-fit=true
+
+[sm/puri/phoc/application/org-gnome-maps]
+scale-to-fit=true
