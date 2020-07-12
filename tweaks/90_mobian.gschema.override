@@ -1,5 +1,6 @@
 [org.gnome.settings-daemon.plugins.power]
-sleep-inactive-battery-type='300'
+sleep-inactive-battery-type='suspend'
+sleep-inactive-battery-timeout=300
 sleep-inactive-ac-type='nothing'
 ambient-enabled=false
 
