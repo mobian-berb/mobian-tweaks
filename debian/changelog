@@ -1,3 +1,11 @@
+mobian-tweaks (0.2.1) unstable; urgency=medium
+
+  * telegramdesktop: scale to 95% by default.
+    This will fit the 360x720 resolution without the need to use phoc's
+    scale-to-fit feature.
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Tue, 14 Jul 2020 17:52:24 +0200
+
 mobian-tweaks (0.2.0) unstable; urgency=medium
 
   * mobian.json: update feedbackd profile
