@@ -1,3 +1,13 @@
+mobian-tweaks (0.2.2) unstable; urgency=medium
+
+  * firefox-esr: set preferences using defaultPref
+    pref() will reset to the default value every time firefox-esr is
+    started.
+    defaultPref() sets the default value once and allows the user to change
+    it, keeping the modified value over time.
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Fri, 24 Jul 2020 12:38:07 +0200
+
 mobian-tweaks (0.2.1) unstable; urgency=medium
 
   * telegramdesktop: scale to 95% by default.
