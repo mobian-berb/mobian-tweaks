@@ -1,3 +1,9 @@
+mobian-tweaks (0.2.3) unstable; urgency=medium
+
+  * resize-rootfs: add F2FS compatibility and move to initramfs
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Tue, 04 Aug 2020 23:50:25 +0200
+
 mobian-tweaks (0.2.2) unstable; urgency=medium
 
   * firefox-esr: set preferences using defaultPref
