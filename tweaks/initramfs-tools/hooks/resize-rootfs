@@ -1,0 +1,15 @@
+#!/bin/sh
+set -e
+
+PREREQS="growroot"
+case $1 in
+    prereqs) echo "${PREREQS}"; exit 0;;
+esac
+
+. /usr/share/initramfs-tools/hook-functions
+
+##
+copy_exec /bin/touch /bin
+copy_exec /sbin/fsck.f2fs /sbin
+copy_exec /sbin/resize.f2fs /sbin
+copy_exec /sbin/resize2fs /sbin
