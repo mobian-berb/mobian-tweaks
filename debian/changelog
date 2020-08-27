@@ -1,3 +1,14 @@
+mobian-tweaks (0.2.5) unstable; urgency=medium
+
+  [ Arnaud Ferraris ]
+  * applications: telegramdesktop: change global scale factor
+  * 90_mobian.gschema: restore desktop animations
+
+  [ Sebastian Spaeth ]
+  * resize-rootfs: Inform user while the rootfs is resized
+
+ -- Sebastian Spaeth <Sebastian@SSpaeth.de>  Thu, 27 Aug 2020 08:11:27 +0200
+
 mobian-tweaks (0.2.4) unstable; urgency=medium
 
   * debian: remove resize-rootfs systemd service
