@@ -21,6 +21,9 @@ for file in /etc/resize-rootfs-disabled /etc/resized-rootfs; do
 	[ -f "${rootmnt}${file}" ] && exit 0
 done
 
+plymouth --ping &&
+plymouth message --text="Resizing file system during initial boot"
+
 # There was something to do, unmount and resize
 umount "${rootmnt}" || fail "failed to umount ${rootmnt}";
 
@@ -47,3 +50,6 @@ mount ${roflag} ${FSTYPE:+-t ${FSTYPE} }${ROOTFLAGS} ${ROOT} ${rootmnt} ||
 	fail "failed to re-mount ${ROOT}. this is bad!"
 
 touch "${rootmnt}/etc/resized-rootfs"
+
+plymouth --ping &&
+plymouth message --text=""
