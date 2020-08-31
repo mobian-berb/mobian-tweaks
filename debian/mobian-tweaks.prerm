@@ -1,0 +1,7 @@
+#!/bin/sh
+set -e
+
+# remove the pam-pinephone pam.d profile
+if [ "$1" = "remove" -o "$1" = "upgrade" ]; then
+        pam-auth-update --package --remove pam-pinephone
+fi
