@@ -1,0 +1,10 @@
+[Unit]
+Description=Configure USB gadget
+Before=umtp-responder.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/mobian-usb-gadget.sh setup
+
+[Install]
+RequiredBy=umtp-responder.service

@@ -2,6 +2,16 @@
 set -e
 
 # remove the pam-pinephone pam.d profile
+# (also on upgrade as we always reinstall it in the postinst script)
 if [ "$1" = "remove" -o "$1" = "upgrade" ]; then
-        pam-auth-update --package --remove pam-pinephone
+    pam-auth-update --package --remove pam-pinephone
+fi
+
+if [ "$1" = "remove" ]; then
+    # Remove USB gadget network connection
+    nmcli connection delete USB
+
+    # Disable automatic start of USB gadget
+    systemctl disable mobian-usb-gadget
+    systemctl disable mobian-mtp
 fi
