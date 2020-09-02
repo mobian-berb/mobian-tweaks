@@ -11,3 +11,5 @@ tweaks/mobian-usb-gadget.sh usr/sbin
 tweaks/mobian.json usr/share/feedbackd/themes/
 tweaks/org.freedesktop.ModemManager1.pkla var/lib/polkit-1/localauthority/10-vendor.d/
 tweaks/initramfs-tools usr/share
+tweaks/umtp-responder/mobian.conf etc/umtprd
+tweaks/umtp-responder/override.conf lib/systemd/system/umtp-responder.service.d/

@@ -6,6 +6,8 @@ if [ "$1" = "configure" ]; then
 
     dpkg-trigger update-initramfs
 
+    # Reload units so the umtp-responder override is taken into account
+    systemctl daemon-reload
     systemctl enable mobian-mtp
     systemctl enable mobian-usb-gadget
 
