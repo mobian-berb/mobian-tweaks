@@ -1,6 +1,9 @@
 #!/bin/sh
 
 if [ "$1" = "configure" ]; then
+    # merge /usr/share/pam-configs/pam-mobian into common-password
+    pam-auth-update --package
+
     dpkg-trigger update-initramfs
 fi
 

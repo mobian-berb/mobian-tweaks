@@ -1,5 +1,6 @@
 tweaks/applications usr/share
 tweaks/dconf etc
+tweaks/pam-configs usr/share
 tweaks/firefox-esr usr/lib
 tweaks/90_mobian.gschema.override usr/share/glib-2.0/schemas
 tweaks/90-usb-gadget-managed.rules usr/lib/udev/rules.d
