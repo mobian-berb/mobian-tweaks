@@ -1,3 +1,15 @@
+mobian-tweaks (0.2.6) unstable; urgency=medium
+
+  [ Sebastian Spaeth ]
+  * mobian-tweaks: overide pam.d/common-password to allow numeric passwords
+    Fixes https://gitlab.com/mobian1/issues/-/issues/9
+
+  [ Arnaud Ferraris ]
+  * tweaks: add script for configuring USB gadget
+  * tweaks: add custom config file for umtp-responder
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Thu, 03 Sep 2020 23:37:54 +0200
+
 mobian-tweaks (0.2.5) unstable; urgency=medium
 
   [ Arnaud Ferraris ]
