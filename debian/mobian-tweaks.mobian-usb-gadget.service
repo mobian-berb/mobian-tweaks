@@ -5,6 +5,8 @@ Before=umtp-responder.service
 [Service]
 Type=oneshot
 ExecStart=/usr/sbin/mobian-usb-gadget.sh setup
+ExecStop=/usr/sbin/mobian-usb-gadget.sh reset
+RemainAfterExit=yes
 
 [Install]
 RequiredBy=umtp-responder.service
