@@ -6,6 +6,7 @@ tweaks/90_mobian.gschema.override usr/share/glib-2.0/schemas
 tweaks/90-usb-gadget-managed.rules usr/lib/udev/rules.d
 tweaks/99-automount-sd.rules usr/lib/udev/rules.d
 tweaks/ignore-power-key.conf etc/systemd/logind.conf.d
+tweaks/mobian-automount.sh usr/sbin
 tweaks/mobian-tweaks.sh etc/profile.d
 tweaks/mobian-usb-gadget.sh usr/sbin
 tweaks/mobian.json usr/share/feedbackd/themes/
