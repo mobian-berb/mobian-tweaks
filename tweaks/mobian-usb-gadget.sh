@@ -53,6 +53,7 @@ setup() {
 
 start() {
     echo "Enabling the USB gadget..."
+    sleep 1
     UDC=`ls /sys/class/udc`
     echo "$UDC" > $CONFIGFS/UDC
 }
