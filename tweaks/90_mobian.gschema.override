@@ -7,6 +7,9 @@ ambient-enabled=false
 [org.gnome.settings-daemon.plugins.wwan]
 unlock-sim=true
 
+[org.gnome.desktop.interface]
+clock-show-date=true
+
 [org.nemo.window-state]
 start-with-sidebar=false
 
