@@ -1,3 +1,14 @@
+mobian-tweaks (0.2.8) unstable; urgency=medium
+
+  * 90_mobian.gschema: remove unnecessary settings.
+    The `button-layout` default setting is now provided by
+    `phosh-mobile-tweaks`, it can therefore be removed
+  * phoc-scaling: stop scaling gnome-maps.
+    This app is now fully mobile-friendly
+  * 90_mobian.gschema: keep showing the date in phosh top bar
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Sat, 19 Sep 2020 14:12:34 +0200
+
 mobian-tweaks (0.2.7) unstable; urgency=medium
 
   * d/postinst: use a less common network address.
