@@ -5,3 +5,4 @@
 
 override_dh_installsystemd:
 	dh_installsystemd --name=mobian-usb-gadget --no-stop-on-upgrade
+	dh_installsystemd --name=mobian-setup-usb-network

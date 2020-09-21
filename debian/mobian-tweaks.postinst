@@ -11,17 +11,12 @@ if [ "$1" = "configure" ]; then
     systemctl enable umtp-responder
     systemctl enable mobian-usb-gadget
 
+    # Try setting up USB networking directly; if it doesn't work (i.e. the NM
+    # connection file isn't created), then we're probably creating an image and
+    # need a systemd service running on first boot to setup USB networking
+    /usr/sbin/mobian-setup-usb-network.sh
     if [ ! -e /etc/NetworkManager/system-connections/USB.nmconnection ]; then
-        # Create network connection
-        nmcli connection add con-name USB ifname usb0 type ethernet \
-              ip4 10.66.0.1/8
-
-        # Set priorities so it doesn't take precedence over WiFi/mobile connections
-        nmcli connection modify USB ipv4.route-metric 1500
-        nmcli connection modify USB ipv4.dns-priority 150
-
-        # Share connection so it can be used for tethering
-        nmcli connection modify USB ipv4.method shared
+        systemctl enable mobian-setup-usb-network
     fi
 fi
 

@@ -12,6 +12,7 @@ Package: mobian-tweaks
 Architecture: all
 Depends: dconf-gsettings-backend | gsettings-backend,
          dconf-cli,
+         network-manager,
          umtp-responder,
          ${misc:Depends}
 Conflicts: pinephone-devtools
