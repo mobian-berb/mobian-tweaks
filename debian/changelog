@@ -1,3 +1,11 @@
+mobian-tweaks (0.3.0) unstable; urgency=medium
+
+  * applications: remove no longer necessary firefox-esr.desktop.
+    This was a workaround for FF 68, which is not longer needed as a proper
+    fix is now included in FF 78.
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Sun, 27 Sep 2020 17:41:33 +0200
+
 mobian-tweaks (0.2.9) unstable; urgency=medium
 
   * tweaks: make sure USB network is setup properly.
