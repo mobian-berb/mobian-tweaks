@@ -1,3 +1,9 @@
+mobian-tweaks (0.3.2) unstable; urgency=medium
+
+  * postinst: fix diversion removal
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Tue, 29 Sep 2020 12:55:37 +0200
+
 mobian-tweaks (0.3.1) unstable; urgency=medium
 
   * 90_mobian.gschema: make sure on-screen keyboard is enabled.
