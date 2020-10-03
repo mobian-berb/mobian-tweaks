@@ -9,7 +9,6 @@ tweaks/mobian-automount.sh usr/sbin
 tweaks/mobian-tweaks.sh etc/profile.d
 tweaks/mobian-usb-gadget.sh usr/sbin
 tweaks/mobian-setup-usb-network.sh usr/sbin
-tweaks/mobian.json usr/share/feedbackd/themes/
 tweaks/org.freedesktop.ModemManager1.pkla var/lib/polkit-1/localauthority/10-vendor.d/
 tweaks/initramfs-tools usr/share
 tweaks/umtp-responder/mobian.conf etc/umtprd
