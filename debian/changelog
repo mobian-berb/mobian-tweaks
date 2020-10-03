@@ -1,3 +1,9 @@
+mobian-tweaks (0.3.3) unstable; urgency=medium
+
+  * tweaks: drop feedbackd theme as it is device-specific
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Sat, 03 Oct 2020 23:55:26 +0200
+
 mobian-tweaks (0.3.2) unstable; urgency=medium
 
   * postinst: fix diversion removal
