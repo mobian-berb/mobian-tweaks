@@ -15,11 +15,9 @@ Depends: dconf-gsettings-backend | gsettings-backend,
          network-manager,
          umtp-responder,
          ${misc:Depends}
-Conflicts: pinephone-devtools
-Breaks: pinephone-devtools
 Description: Special tweaks for Mobian
  Additional configuration files for Mobian, including:
-   - default GNOME settings more suited to mobile phones
+   - default GNOME settings more suited to mobile devices
    - custom logind config, feedbackd profile and ModemManager polkit
      permissions
    - diverted desktop files for several applications
