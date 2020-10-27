@@ -11,6 +11,9 @@ if [ "$1" = "configure" ]; then
     systemctl enable umtp-responder
     systemctl enable mobian-usb-gadget
 
+    # Generate SSH host keys on first boot
+    systemctl enable mobian-ssh-keygen
+
     # Try setting up USB networking directly; if it doesn't work (i.e. the NM
     # connection file isn't created), then we're probably creating an image and
     # need a systemd service running on first boot to setup USB networking
