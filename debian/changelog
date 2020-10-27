@@ -1,3 +1,16 @@
+mobian-tweaks (0.3.4) unstable; urgency=medium
+
+  [ Arnaud Ferraris ]
+  * prerm: fix pam profile name
+  * d/control: remove relationships with deprecated pinephone-devtools
+  * dconf: enable scale-to-fit for evolution-alarm-notify
+  * gschema: remove deprecated Epiphany key 'mobile-user-agent'
+
+  [ Koen Vervloesem ]
+  * Generate SSH host keys on first boot
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Tue, 27 Oct 2020 15:42:46 +0100
+
 mobian-tweaks (0.3.3) unstable; urgency=medium
 
   * tweaks: drop feedbackd theme as it is device-specific
