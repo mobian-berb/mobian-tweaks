@@ -10,8 +10,8 @@ Vcs-Browser: https://gitlab.com/mobian1/mobian-tweaks
 
 Package: mobian-tweaks
 Architecture: all
-Depends: dconf-gsettings-backend | gsettings-backend,
-         dconf-cli,
+Depends: dconf-cli,
+         mobile-tweaks-common,
          network-manager,
          umtp-responder,
          ${misc:Depends}
