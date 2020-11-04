@@ -1,15 +1,3 @@
-[org.gnome.desktop.a11y.applications]
-screen-keyboard-enabled=true
-
-[org.gnome.settings-daemon.plugins.power]
-sleep-inactive-battery-type='suspend'
-sleep-inactive-battery-timeout=300
-sleep-inactive-ac-type='nothing'
-ambient-enabled=false
-
-[org.gnome.settings-daemon.plugins.wwan]
-unlock-sim=true
-
 [org.gnome.desktop.interface]
 clock-show-date=true
 
@@ -19,6 +7,3 @@ start-with-sidebar=false
 [org.nemo.preferences]
 default-folder-viewer='compact-view'
 click-policy='single'
-
-[org.gnome.Epiphany.web]
-user-agent='Mozilla/5.0 (Debian device, like iPhone; X11; Linux x86_64) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0 Safari/605.1.15 Epiphany/605.1.15'
