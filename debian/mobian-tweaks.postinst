@@ -17,7 +17,7 @@ if [ "$1" = "configure" ]; then
     # Try setting up USB networking directly; if it doesn't work (i.e. the NM
     # connection file isn't created), then we're probably creating an image and
     # need a systemd service running on first boot to setup USB networking
-    /usr/sbin/mobian-setup-usb-network.sh
+    /usr/sbin/mobian-setup-usb-network
     if [ ! -e /etc/NetworkManager/system-connections/USB.nmconnection ]; then
         systemctl enable mobian-setup-usb-network
     fi

@@ -10,11 +10,11 @@ tweaks/initramfs-tools usr/share
 
 # SD card automounting
 tweaks/99-automount-sd.rules usr/lib/udev/rules.d
-tweaks/mobian-automount.sh usr/sbin
+tweaks/mobian-automount usr/sbin
 
 # USB gadget: setup script using configfs + network connection + MTP server
-tweaks/mobian-usb-gadget.sh usr/sbin
-tweaks/mobian-setup-usb-network.sh usr/sbin
+tweaks/mobian-usb-gadget usr/sbin
+tweaks/mobian-setup-usb-network usr/sbin
 tweaks/umtp-responder/mobian.conf etc/umtprd
 tweaks/umtp-responder/override.conf lib/systemd/system/umtp-responder.service.d/
 

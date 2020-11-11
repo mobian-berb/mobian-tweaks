@@ -6,7 +6,7 @@ ConditionFirstBoot=yes
 
 [Service]
 Type=oneshot
-ExecStart=/usr/sbin/mobian-setup-usb-network.sh
+ExecStart=/usr/sbin/mobian-setup-usb-network
 
 [Install]
 WantedBy=multi-user.target
