@@ -1,12 +1,13 @@
 Source: mobian-tweaks
-Section: libs
+Section: misc
 Priority: optional
 Maintainer: Arnaud Ferraris <arnaud.ferraris@gmail.com>
 Standards-Version: 4.5.0
+Build-Depends: debhelper-compat (= 13)
+Homepage: https://salsa.debian.org/Mobian-team/mobian-tweaks
+Vcs-Git: https://salsa.debian.org/Mobian-team/mobian-tweaks.git
+Vcs-Browser: https://salsa.debian.org/Mobian-team/mobian-tweaks
 Rules-Requires-Root: no
-Build-Depends: debhelper-compat (= 12)
-Vcs-Git: https://gitlab.com/mobian1/mobian-tweaks.git
-Vcs-Browser: https://gitlab.com/mobian1/mobian-tweaks
 
 Package: mobian-tweaks
 Architecture: all
@@ -15,11 +16,14 @@ Depends: dconf-cli,
          network-manager,
          umtp-responder,
          ${misc:Depends}
-Description: Special tweaks for Mobian
- Additional configuration files for Mobian, including:
-   - default GNOME settings more suited to mobile devices
-   - custom logind config, feedbackd profile and ModemManager polkit
-     permissions
-   - diverted desktop files for several applications
-   - default environment variables for helping Qt apps and Firefox behave
-     properly under Wayland
+Description: Generic configuration settings for Mobian
+ Mobian is a Debian blend targetting mobile devices, such as phones and tablets.
+ .
+ This package provides device-independent configuration files aimed at improving
+ the user experience on mobile devices, including:
+   * default GNOME settings more suited to mobile devices
+   * initramfs hooks for resizing the rootfs partition on initial boot
+   * custom PAM & logind config, and ModemManager polkit permissions
+   * diverted desktop files for several applications
+   * systemd services for out-of-the-box USB networking, MTP and SD card
+     automounting
