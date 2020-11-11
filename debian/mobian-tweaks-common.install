@@ -1,0 +1,21 @@
+# .desktop files diversions to hide applications or improve their behavior on
+# mobile devices
+common/applications usr/share
+
+# initramfs hooks for resizing the rootfs on first boot
+common/initramfs-tools usr/share
+
+# SD card automounting
+common/99-automount-sd.rules usr/lib/udev/rules.d
+common/mobian-automount usr/sbin
+
+# USB gadget: setup script using configfs + network connection + MTP server
+common/mobian-usb-gadget usr/sbin
+common/mobian-setup-usb-network usr/sbin
+common/umtp-responder/mobian.conf etc/umtprd
+common/umtp-responder/override.conf lib/systemd/system/umtp-responder.service.d/
+
+# Misc config files
+common/ignore-power-key.conf etc/systemd/logind.conf.d
+common/org.freedesktop.ModemManager1.pkla var/lib/polkit-1/localauthority/10-vendor.d/
+common/pam-configs usr/share

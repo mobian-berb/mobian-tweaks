@@ -1,0 +1,5 @@
+# Default scale-to-fit settings
+phosh/dconf etc
+
+# gsettings override
+phosh/90_mobian-tweaks-phosh.gschema.override usr/share/glib-2.0/schemas

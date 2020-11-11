@@ -22,5 +22,3 @@ if [ "$1" = "configure" ]; then
         systemctl enable mobian-setup-usb-network
     fi
 fi
-
-dconf update

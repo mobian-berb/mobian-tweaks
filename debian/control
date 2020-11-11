@@ -9,21 +9,33 @@ Vcs-Git: https://salsa.debian.org/Mobian-team/mobian-tweaks.git
 Vcs-Browser: https://salsa.debian.org/Mobian-team/mobian-tweaks
 Rules-Requires-Root: no
 
-Package: mobian-tweaks
+Package: mobian-tweaks-common
 Architecture: all
-Depends: dconf-cli,
-         mobile-tweaks-common,
+Depends: mobile-tweaks-common,
          network-manager,
          umtp-responder,
          ${misc:Depends}
-Description: Generic configuration settings for Mobian
+Description: Mobian -- Generic configuration settings
  Mobian is a Debian blend targetting mobile devices, such as phones and tablets.
  .
  This package provides device-independent configuration files aimed at improving
  the user experience on mobile devices, including:
-   * default GNOME settings more suited to mobile devices
    * initramfs hooks for resizing the rootfs partition on initial boot
    * custom PAM & logind config, and ModemManager polkit permissions
    * diverted desktop files for several applications
    * systemd services for out-of-the-box USB networking, MTP and SD card
      automounting
+
+Package: mobian-tweaks-phosh
+Architecture: all
+Depends: dconf-cli,
+         mobian-tweaks-common,
+         ${misc:Depends}
+Conflicts: mobian-tweaks
+Provides: mobian-tweaks
+Replaces: mobian-tweaks
+Description: Mobian -- Configuration settings for Phosh
+ Mobian is a Debian blend targetting mobile devices, such as phones and tablets.
+ .
+ This package provides configuration files for the Phosh environment:
+   * default GNOME settings more suited to mobile devices
