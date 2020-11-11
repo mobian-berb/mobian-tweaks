@@ -1,13 +1,25 @@
+# .desktop files diversions to hide applications or improve their behavior on
+# mobile devices
 tweaks/applications usr/share
+
+# Default scale-to-fit serrints
 tweaks/dconf etc
-tweaks/pam-configs usr/share
-tweaks/90_mobian.gschema.override usr/share/glib-2.0/schemas
+
+# initramfs hooks for resizing the rootfs on first boot
+tweaks/initramfs-tools usr/share
+
+# SD card automounting
 tweaks/99-automount-sd.rules usr/lib/udev/rules.d
-tweaks/ignore-power-key.conf etc/systemd/logind.conf.d
 tweaks/mobian-automount.sh usr/sbin
+
+# USB gadget: setup script using configfs + network connection + MTP server
 tweaks/mobian-usb-gadget.sh usr/sbin
 tweaks/mobian-setup-usb-network.sh usr/sbin
-tweaks/org.freedesktop.ModemManager1.pkla var/lib/polkit-1/localauthority/10-vendor.d/
-tweaks/initramfs-tools usr/share
 tweaks/umtp-responder/mobian.conf etc/umtprd
 tweaks/umtp-responder/override.conf lib/systemd/system/umtp-responder.service.d/
+
+# Misc config files
+tweaks/90_mobian.gschema.override usr/share/glib-2.0/schemas
+tweaks/ignore-power-key.conf etc/systemd/logind.conf.d
+tweaks/org.freedesktop.ModemManager1.pkla var/lib/polkit-1/localauthority/10-vendor.d/
+tweaks/pam-configs usr/share
