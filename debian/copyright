@@ -1,11 +1,21 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: mobian-tweaks
 Upstream-Contact: Arnaud Ferraris <arnaud.ferraris@gmail.com>
-Source: https://gitlab.com/mobian1/mobian-tweaks
+Source: https://salsa.debian.org/Mobian-team/mobian-tweaks
 
 Files: *
 Copyright: 2020 Arnaud Ferraris <arnaud.ferraris@gmail.com>
-License: GPL-3+
+License: GPL-3.0-or-later
+
+Files: debian/mobian-tweaks-common.mobian-ssh-keygen.service
+Copyright: 2020 Koen Vervloesem
+License: GPL-3.0-or-later
+
+Files: common/pam-configs/*
+Copyright: 2020 Sebastian Spaeth
+License: GPL-3.0-or-later
+
+License: GPL-3.0-or-later
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
  the Free Software Foundation, either version 3 of the License, or
