@@ -21,14 +21,6 @@ if [ "$1" = "configure" ]; then
     if [ ! -e /etc/NetworkManager/system-connections/USB.nmconnection ]; then
         systemctl enable mobian-setup-usb-network
     fi
-
-    # Remove previous firefox-esr.desktop diversion as it's no longer needed
-    if dpkg --compare-versions "$2" le "0.3.1"
-    then
-        dpkg-divert --package mobian-tweaks --remove --rename \
-                    --divert /usr/share/applications/firefox-esr.desktop.orig \
-                    /usr/share/applications/firefox-esr.desktop
-    fi
 fi
 
 dconf update
