@@ -1,3 +1,16 @@
+mobian-tweaks (0.3.6) unstable; urgency=medium
+
+  * install: reorder entries and add comments
+  * debian: add salsa-ci.yml
+  * d/control: Use salsa repos, fix section and improve description
+  * Remove '.sh' extension from shell scripts.
+    This makes sure we align with Debian's policy.
+  * debian: remove references to firefox-esr diversion as it's long gone
+  * Split into `-common` and `-phosh` packages
+  * d/copyright: update URL and license tags
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Fri, 13 Nov 2020 00:44:28 +0100
+
 mobian-tweaks (0.3.5) unstable; urgency=medium
 
   * tweaks: remove files already in Debian's mobile-tweaks-common
