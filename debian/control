@@ -15,6 +15,9 @@ Depends: mobile-tweaks-common,
          network-manager,
          umtp-responder,
          ${misc:Depends}
+Conflicts: mobian-tweaks
+Provides: mobian-tweaks
+Replaces: mobian-tweaks
 Description: Mobian -- Generic configuration settings
  Mobian is a Debian blend targetting mobile devices, such as phones and tablets.
  .
@@ -31,9 +34,6 @@ Architecture: all
 Depends: dconf-cli,
          mobian-tweaks-common,
          ${misc:Depends}
-Conflicts: mobian-tweaks
-Provides: mobian-tweaks
-Replaces: mobian-tweaks
 Description: Mobian -- Configuration settings for Phosh
  Mobian is a Debian blend targetting mobile devices, such as phones and tablets.
  .
