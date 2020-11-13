@@ -1,3 +1,9 @@
+mobian-tweaks (0.3.7) unstable; urgency=medium
+
+  * d/control: mark -common as replacing mobian-tweaks, not -phosh
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Fri, 13 Nov 2020 01:32:10 +0100
+
 mobian-tweaks (0.3.6) unstable; urgency=medium
 
   * install: reorder entries and add comments
