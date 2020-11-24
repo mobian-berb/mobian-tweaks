@@ -2,4 +2,11 @@
 
 if [ "$1" = "configure" ]; then
     dconf update
+
+    # Make sure the default user belongs to the `feedbackd` group so it can
+    # trigger LED feedback
+    MAIN_USER=`id -nu 1000`;
+    if ! groups $MAIN_USER | grep -q feedbackd; then
+        adduser $MAIN_USER feedbackd
+    fi
 fi
