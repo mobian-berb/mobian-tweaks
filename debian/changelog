@@ -1,3 +1,9 @@
+mobian-tweaks (0.3.9) unstable; urgency=medium
+
+  * postinst: ensure the default user exists
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Wed, 25 Nov 2020 18:58:11 +0100
+
 mobian-tweaks (0.3.8) unstable; urgency=medium
 
   * postinst: make sure default user belongs to the 'feedbackd' group
