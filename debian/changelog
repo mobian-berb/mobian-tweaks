@@ -1,3 +1,9 @@
+mobian-tweaks (0.4.1) unstable; urgency=medium
+
+  * hooks: growcrypt: fix resized-rootfs file copy
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Wed, 02 Dec 2020 15:13:12 +0100
+
 mobian-tweaks (0.4.0) unstable; urgency=medium
 
   * resize-rootfs: if using an encrypted root, resize the luks volume first
