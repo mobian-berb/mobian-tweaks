@@ -8,8 +8,8 @@ esac
 
 . /scripts/functions
 
-msg() { echo "RESIZE-ROOTFS:" "$@" ; }
-fail() { [ $# -eq 0 ] || msg "$@"; exit 1; }
+msg() { log_success_msg "RESIZE-ROOTFS: $@" ; }
+fail() { [ $# -eq 0 ] || log_failure_msg "$@"; exit 1; }
 
 ###
 ### This runs right before exec of /sbin/init. The real root is
@@ -26,6 +26,11 @@ plymouth message --text="Resizing file system during initial boot"
 
 # There was something to do, unmount and resize
 umount "${rootmnt}" || fail "failed to umount ${rootmnt}";
+
+if echo "${ROOT}" | grep -q "/dev/mapper/"; then
+    # Encrypted partition, we need to resize the LUKS volume first
+    cryptsetup resize $ROOT > /dev/console 2>&1
+fi
 
 # this is taken from 'mountroot' function
 #   see /usr/share/initramfs-tools/scripts/local
