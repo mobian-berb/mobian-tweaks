@@ -9,5 +9,5 @@ esac
 . /usr/share/initramfs-tools/hook-functions
 
 ##
-[ -f /etc/resized-rootfs ] && copy_file /etc/resized-rootfs /etc
+[ -f /etc/resized-rootfs ] && copy_file flag /etc/resized-rootfs
 copy_exec /usr/bin/lsblk /usr/bin
