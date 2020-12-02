@@ -1,3 +1,10 @@
+mobian-tweaks (0.4.0) unstable; urgency=medium
+
+  * resize-rootfs: if using an encrypted root, resize the luks volume first
+  * initramfs-tools: add growcrypt for auto-resizing luks volume
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Wed, 02 Dec 2020 14:17:49 +0100
+
 mobian-tweaks (0.3.9) unstable; urgency=medium
 
   * postinst: ensure the default user exists
