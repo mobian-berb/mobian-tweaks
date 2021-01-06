@@ -5,10 +5,6 @@ common/applications usr/share
 # initramfs hooks for resizing the rootfs on first boot
 common/initramfs-tools usr/share
 
-# SD card automounting
-common/99-automount-sd.rules usr/lib/udev/rules.d
-common/mobian-automount usr/sbin
-
 # USB gadget: setup script using configfs + network connection + MTP server
 common/mobian-usb-gadget usr/sbin
 common/mobian-setup-usb-network usr/sbin

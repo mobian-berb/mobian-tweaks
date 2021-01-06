@@ -1,3 +1,0 @@
-## Automatically mount the SD card when inserted
-
-ACTION=="add", KERNEL=="mmcblk[0-9]", RUN{program}+="/usr/sbin/mobian-automount -m $devnode"
