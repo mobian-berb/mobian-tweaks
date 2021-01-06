@@ -1,3 +1,9 @@
+mobian-tweaks (0.4.2) unstable; urgency=medium
+
+  * common: remove automount feature.
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Wed, 06 Jan 2021 20:56:25 +0100
+
 mobian-tweaks (0.4.1) unstable; urgency=medium
 
   * hooks: growcrypt: fix resized-rootfs file copy
