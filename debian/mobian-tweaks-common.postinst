@@ -21,4 +21,10 @@ if [ "$1" = "configure" ]; then
     if [ ! -e /etc/NetworkManager/system-connections/USB.nmconnection ]; then
         systemctl enable mobian-setup-usb-network
     fi
+
+    # Use 50% RAM as ZRAM swap space
+    if ! grep -q "Mobian" /etc/default/zramswap; then
+        sed -i -e 's/#PERCENT.*/PERCENT=50/' /etc/default/zramswap
+        echo "# Configured for Mobian" >> /etc/default/zramswap
+    fi
 fi

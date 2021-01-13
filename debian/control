@@ -14,6 +14,7 @@ Architecture: all
 Depends: mobile-tweaks-common,
          network-manager,
          umtp-responder,
+         zram-tools,
          ${misc:Depends}
 Conflicts: mobian-tweaks
 Provides: mobian-tweaks
