@@ -1,3 +1,9 @@
+mobian-tweaks (0.4.3) unstable; urgency=medium
+
+  * mobian-tweaks-common: enable 50% ZRAM by default
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Wed, 13 Jan 2021 15:46:40 +0100
+
 mobian-tweaks (0.4.2) unstable; urgency=medium
 
   * common: remove automount feature.
