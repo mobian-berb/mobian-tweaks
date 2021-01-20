@@ -1,9 +1,2 @@
 [org.gnome.desktop.interface]
 clock-show-date=true
-
-[org.nemo.window-state]
-start-with-sidebar=false
-
-[org.nemo.preferences]
-default-folder-viewer='compact-view'
-click-policy='single'
