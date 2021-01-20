@@ -1,6 +1,5 @@
 [Unit]
 Description=Configure USB gadget
-Before=umtp-responder.service
 
 [Service]
 Type=oneshot
@@ -9,4 +8,4 @@ ExecStop=/usr/sbin/mobian-usb-gadget reset
 RemainAfterExit=yes
 
 [Install]
-RequiredBy=umtp-responder.service
+WantedBy=multi-user.target

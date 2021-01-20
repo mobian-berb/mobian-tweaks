@@ -13,5 +13,4 @@ if [ "$1" = "remove" ]; then
 
     # Disable automatic start of USB gadget
     systemctl disable mobian-usb-gadget
-    systemctl disable umtp-responder
 fi

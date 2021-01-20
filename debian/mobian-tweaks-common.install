@@ -8,8 +8,6 @@ common/initramfs-tools usr/share
 # USB gadget: setup script using configfs + network connection + MTP server
 common/mobian-usb-gadget usr/sbin
 common/mobian-setup-usb-network usr/sbin
-common/umtp-responder/mobian.conf etc/umtprd
-common/umtp-responder/override.conf lib/systemd/system/umtp-responder.service.d/
 
 # Misc config files
 common/ignore-power-key.conf etc/systemd/logind.conf.d

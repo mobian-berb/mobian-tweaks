@@ -8,7 +8,6 @@ if [ "$1" = "configure" ]; then
 
     # Reload units so the umtp-responder override is taken into account
     systemctl daemon-reload
-    systemctl enable umtp-responder
     systemctl enable mobian-usb-gadget
 
     # Generate SSH host keys on first boot
