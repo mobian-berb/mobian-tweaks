@@ -1,3 +1,12 @@
+mobian-tweaks (0.4.4) unstable; urgency=medium
+
+  * common: remove MTP feature.
+    Due to security & usability concerns, we should remove this now. This
+    will be restored when we find a more secure way to do so.
+  * phosh: remove nemo-related settings
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Wed, 20 Jan 2021 15:40:48 +0100
+
 mobian-tweaks (0.4.3) unstable; urgency=medium
 
   * mobian-tweaks-common: enable 50% ZRAM by default
