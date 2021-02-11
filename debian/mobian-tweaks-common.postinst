@@ -26,4 +26,11 @@ if [ "$1" = "configure" ]; then
         sed -i -e 's/#PERCENT.*/PERCENT=50/' /etc/default/zramswap
         echo "# Configured for Mobian" >> /etc/default/zramswap
     fi
+
+    # Use ZSTD compression for initramfs (will reduce size by ~20%)
+    if ! grep -q "Mobian1" /etc/initramfs-tools/initramfs.conf; then
+        sed -i -e 's/COMPRESS=.*/COMPRESS=zstd/' /etc/initramfs-tools/initramfs.conf
+        echo "# Configured for Mobian1" >> /etc/initramfs-tools/initramfs.conf
+        update-initramfs -u -k all
+    fi
 fi
