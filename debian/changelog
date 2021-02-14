@@ -1,3 +1,10 @@
+mobian-tweaks (0.4.6) unstable; urgency=medium
+
+  [ Evangelos Ribeiro Tzaras ]
+  * USB: hash machine id
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Sun, 14 Feb 2021 10:32:02 +0100
+
 mobian-tweaks (0.4.5) unstable; urgency=medium
 
   * common: compress initramfs using ZSTD
