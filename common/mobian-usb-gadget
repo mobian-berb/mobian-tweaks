@@ -5,7 +5,7 @@ USB_VENDORID="0x1D6B"  # Linux Foundation
 USB_PRODUCTID="0x0104" # Multifunction composite gadget
 USB_MANUF="Mobian Project"
 USB_PRODUCT="Mobian"
-USB_SERIAL=`cat /etc/machine-id`
+USB_SERIAL=$(sha256sum < /etc/machine-id | cut -d' ' -f1)
 
 setup() {
     # Don't do anything if the USB gadget already exists
