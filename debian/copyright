@@ -1,7 +1,4 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: mobian-tweaks
-Upstream-Contact: Arnaud Ferraris <arnaud.ferraris@gmail.com>
-Source: https://salsa.debian.org/Mobian-team/mobian-tweaks
 
 Files: *
 Copyright: 2020 Arnaud Ferraris <arnaud.ferraris@gmail.com>
