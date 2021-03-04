@@ -2,7 +2,7 @@ Source: mobian-tweaks
 Section: misc
 Priority: optional
 Maintainer: Arnaud Ferraris <arnaud.ferraris@gmail.com>
-Standards-Version: 4.5.0
+Standards-Version: 4.5.1
 Build-Depends: debhelper-compat (= 13)
 Homepage: https://salsa.debian.org/Mobian-team/mobian-tweaks
 Vcs-Git: https://salsa.debian.org/Mobian-team/mobian-tweaks.git
