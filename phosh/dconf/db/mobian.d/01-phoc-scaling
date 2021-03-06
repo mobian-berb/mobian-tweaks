@@ -6,3 +6,6 @@ scale-to-fit=true
 
 [sm/puri/phoc/application/evolution-alarm-notify]
 scale-to-fit=true
+
+[sm/puri/phoc/application/anki]
+scale-to-fit=true
