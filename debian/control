@@ -11,7 +11,10 @@ Rules-Requires-Root: no
 
 Package: mobian-tweaks-common
 Architecture: all
-Depends: mobile-tweaks-common,
+Depends: f2fs-tools,
+         e2fsprogs,
+         btrfs-progs,
+         mobile-tweaks-common,
          network-manager,
          zram-tools,
          ${misc:Depends}
