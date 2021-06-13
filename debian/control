@@ -34,6 +34,7 @@ Package: mobian-tweaks-phosh
 Architecture: all
 Depends: dconf-cli,
          mobian-tweaks-common,
+         adduser,
          ${misc:Depends}
 Description: Mobian -- Configuration settings for Phosh
  Mobian is a Debian blend targetting mobile devices, such as phones and tablets.
