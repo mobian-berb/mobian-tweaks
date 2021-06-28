@@ -27,3 +27,5 @@ if [ "$1" = "configure" ]; then
         echo "# Configured for Mobian" >> /etc/default/zramswap
     fi
 fi
+
+#DEBHELPER#

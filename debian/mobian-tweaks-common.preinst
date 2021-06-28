@@ -11,3 +11,5 @@ then
                     /usr/share/applications/$app.desktop
     done
 fi
+
+#DEBHELPER#
