@@ -1,3 +1,22 @@
+mobian-tweaks (0.4.8) unstable; urgency=medium
+
+  [ Nicolas Boulenguez ]
+  * Remove upstream copyright information
+  * Bump Standards-Version, no changes
+
+  [ undef ]
+  * d/control: mobian-tweaks-phosh should depend on adduser.
+  * tweaks/resize: add BTRFS resize option.
+
+  [ Travis Wrightsman ]
+  * resize-rootfs: Don't resize LUKS volume.
+
+  [ Arnaud Ferraris ]
+  * d/common.postinst: stop using ZSTD compression for initramfs.
+  * maintscripts: add debhelper placeholder.
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Mon, 28 Jun 2021 21:27:58 +0200
+
 mobian-tweaks (0.4.7) unstable; urgency=medium
 
   * Use a more restrictive subnet for USB networking.
