@@ -1,2 +1,5 @@
 [org.gnome.desktop.interface]
 clock-show-date=true
+
+[sm.puri.phosh]
+app-filter-mode=[]
