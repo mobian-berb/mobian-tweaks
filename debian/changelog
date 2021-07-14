@@ -1,3 +1,9 @@
+mobian-tweaks (0.4.9) unstable; urgency=medium
+
+  * phosh: gschema override: don't filter out adaptive apps by default.
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Thu, 15 Jul 2021 00:21:03 +0200
+
 mobian-tweaks (0.4.8) unstable; urgency=medium
 
   [ Nicolas Boulenguez ]
