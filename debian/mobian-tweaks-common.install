@@ -11,5 +11,6 @@ common/mobian-setup-usb-network usr/sbin
 
 # Misc config files
 common/ignore-power-key.conf etc/systemd/logind.conf.d
+common/journal-max-retention.conf etc/systemd/journald.conf.d
 common/org.freedesktop.ModemManager1.pkla var/lib/polkit-1/localauthority/10-vendor.d/
 common/pam-configs usr/share
