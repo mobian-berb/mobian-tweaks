@@ -29,7 +29,7 @@ Description: Mobian -- Generic configuration settings
    * initramfs hooks for resizing the rootfs partition on initial boot
    * custom PAM & logind config, and ModemManager polkit permissions
    * diverted desktop files for several applications
-   * systemd services for out-of-the-box USB networking, MTP and SD card
+   * systemd services for out-of-the-box USB networking and SD card
      automounting
 
 Package: mobian-tweaks-phosh
