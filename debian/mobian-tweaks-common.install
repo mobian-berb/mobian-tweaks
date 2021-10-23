@@ -1,5 +1,4 @@
-# .desktop files diversions to hide applications or improve their behavior on
-# mobile devices
+# .desktop files diversions to improve applications behavior on mobile devices
 common/applications usr/share
 
 # initramfs hooks for resizing the rootfs on first boot

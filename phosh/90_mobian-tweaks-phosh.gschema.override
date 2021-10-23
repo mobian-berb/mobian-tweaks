@@ -2,4 +2,4 @@
 clock-show-date=true
 
 [sm.puri.phosh]
-app-filter-mode=[]
+force-adaptive=['org.gnome.Fractal.desktop', 'org.gnome.Todo.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.Geary.desktop', 'org.gnome.Software.desktop', 'org.gnome.zbrown.KingsCross.desktop', 'telegramdesktop.desktop', 'org.gnome.Totem.desktop', 'nl.brixit.powersupply.desktop', 'com.github.bilelmoussaoui.Authenticator.desktop', 'firefox-esr.desktop']

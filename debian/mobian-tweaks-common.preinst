@@ -2,9 +2,21 @@
 
 set -e
 
-if [ upgrade != "$1" ]
+if [ upgrade = "$1" ]
 then
-    for app in debian-uxterm debian-xterm htop sm.puri.OSK0 telegramdesktop vim
+    for app in debian-uxterm debian-xterm htop vim
+    do
+        dpkg-divert --package mobian-tweaks-common --remove --no-rename \
+                    /usr/share/applications/$app.desktop
+        # Work around an issue where --rename fails due to the initial file
+        # having changed in the meantime
+        if [ -f /usr/share/applications/$app.desktop.orig ]; then
+            mv /usr/share/applications/$app.desktop.orig \
+               /usr/share/applications/$app.desktop
+        fi
+    done
+else
+    for app in sm.puri.OSK0 telegramdesktop
     do
         dpkg-divert --package mobian-tweaks-common --add --rename \
                     --divert /usr/share/applications/$app.desktop.orig \
