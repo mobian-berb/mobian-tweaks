@@ -1,0 +1,3 @@
+remove-on-upgrade /etc/dconf/profile/user
+remove-on-upgrade /etc/dconf/db/mobian
+remove-on-upgrade /etc/dconf/db/mobian.d/01-phoc-scaling
