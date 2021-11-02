@@ -1,3 +1,16 @@
+mobian-tweaks (0.5.0) unstable; urgency=medium
+
+  [ undef ]
+  * d/control: remove MTP reference.
+
+  [ Arnaud Ferraris ]
+  * mobian-tweaks-common: limit logs retention time
+  * common: filter apps using built-in mechanisms.
+  * phosh: remove scale-to-fit presets.
+  * debian: add git-buildpackage config
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Tue, 02 Nov 2021 23:52:02 +0100
+
 mobian-tweaks (0.4.9) unstable; urgency=medium
 
   * phosh: gschema override: don't filter out adaptive apps by default.
