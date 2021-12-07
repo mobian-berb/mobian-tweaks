@@ -1,2 +1,6 @@
 # gsettings override
 phosh/90_mobian-tweaks-phosh.gschema.override usr/share/glib-2.0/schemas
+
+# Unlock keyring on session startup
+phosh/pam/phosh etc/pam.d/
+phosh/phosh-pam.conf usr/lib/systemd/system/phosh.service.d/

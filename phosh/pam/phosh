@@ -1,0 +1,11 @@
+@include common-auth
+auth    optional        pam_gnome_keyring.so
+
+@include common-account
+@include common-password
+
+session optional        pam_keyinit.so force revoke
+session required        pam_limits.so
+session required        pam_env.so readenv=1
+session required        pam_env.so readenv=1 envfile=/etc/default/locale
+@include common-session
