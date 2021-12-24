@@ -1,3 +1,9 @@
+mobian-tweaks (0.5.1) unstable; urgency=medium
+
+  * phosh: make phosh unlock gnome-keyring on session startup
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Fri, 24 Dec 2021 16:23:55 +0100
+
 mobian-tweaks (0.5.0) unstable; urgency=medium
 
   [ undef ]
