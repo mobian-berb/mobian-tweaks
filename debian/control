@@ -2,11 +2,11 @@ Source: mobian-tweaks
 Section: misc
 Priority: optional
 Maintainer: Arnaud Ferraris <arnaud.ferraris@gmail.com>
-Standards-Version: 4.5.1
+Standards-Version: 4.6.0
 Build-Depends: debhelper-compat (= 13)
-Homepage: https://salsa.debian.org/Mobian-team/mobian-tweaks
-Vcs-Git: https://salsa.debian.org/Mobian-team/mobian-tweaks.git
-Vcs-Browser: https://salsa.debian.org/Mobian-team/mobian-tweaks
+Homepage: https://gitlab.com/mobian1/mobian-tweaks
+Vcs-Git: https://gitlab.com/mobian1/mobian-tweaks.git
+Vcs-Browser: https://gitlab.com/mobian1/mobian-tweaks
 Rules-Requires-Root: no
 
 Package: mobian-tweaks-common
@@ -23,12 +23,10 @@ Description: Mobian -- Generic configuration settings
  Mobian is a Debian blend targetting mobile devices, such as phones and tablets.
  .
  This package provides device-independent configuration files aimed at improving
- the user experience on mobile devices, including:
-   * initramfs hooks for resizing the rootfs partition on initial boot
-   * custom PAM & logind config, and ModemManager polkit permissions
-   * diverted desktop files for several applications
-   * systemd services for out-of-the-box USB networking and SD card
-     automounting
+ the user experience on mobile devices:
+   * PAM config for allowing numeric passwords
+   * logind config for ignoring presses on the power key
+   * journald config for limiting the amount of disk space used by logs
 
 Package: mobian-tweaks-phosh
 Architecture: all
@@ -41,3 +39,4 @@ Description: Mobian -- Configuration settings for Phosh
  .
  This package provides configuration files for the Phosh environment:
    * default GNOME settings more suited to mobile devices
+   * PAM session config for auto-unlocking the keyring on login
