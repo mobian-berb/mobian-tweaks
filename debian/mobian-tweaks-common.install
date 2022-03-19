@@ -1,6 +1,3 @@
-# .desktop files diversions to improve applications behavior on mobile devices
-common/applications usr/share
-
 # Misc config files
 common/ignore-power-key.conf etc/systemd/logind.conf.d
 common/journal-max-retention.conf etc/systemd/journald.conf.d
