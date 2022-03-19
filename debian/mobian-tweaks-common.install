@@ -1,13 +1,6 @@
 # .desktop files diversions to improve applications behavior on mobile devices
 common/applications usr/share
 
-# initramfs hooks for resizing the rootfs on first boot
-common/initramfs-tools usr/share
-
-# USB gadget: setup script using configfs + network connection + MTP server
-common/mobian-usb-gadget usr/sbin
-common/mobian-setup-usb-network usr/sbin
-
 # Misc config files
 common/ignore-power-key.conf etc/systemd/logind.conf.d
 common/journal-max-retention.conf etc/systemd/journald.conf.d

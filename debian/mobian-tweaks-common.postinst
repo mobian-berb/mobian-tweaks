@@ -1,31 +1,9 @@
 #!/bin/sh
+set -e
 
 if [ "$1" = "configure" ]; then
     # merge /usr/share/pam-configs/pam-mobian into common-password
     pam-auth-update --package
-
-    dpkg-trigger update-initramfs
-
-    # Reload units so the umtp-responder override is taken into account
-    systemctl daemon-reload
-    systemctl enable mobian-usb-gadget
-
-    # Generate SSH host keys on first boot
-    systemctl enable mobian-ssh-keygen
-
-    # Try setting up USB networking directly; if it doesn't work (i.e. the NM
-    # connection file isn't created), then we're probably creating an image and
-    # need a systemd service running on first boot to setup USB networking
-    /usr/sbin/mobian-setup-usb-network
-    if [ ! -e /etc/NetworkManager/system-connections/USB.nmconnection ]; then
-        systemctl enable mobian-setup-usb-network
-    fi
-
-    # Use 50% RAM as ZRAM swap space
-    if ! grep -q "Mobian" /etc/default/zramswap; then
-        sed -i -e 's/#PERCENT.*/PERCENT=50/' /etc/default/zramswap
-        echo "# Configured for Mobian" >> /etc/default/zramswap
-    fi
 fi
 
 #DEBHELPER#

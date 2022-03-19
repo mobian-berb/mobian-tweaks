@@ -7,12 +7,4 @@ if [ "$1" = "remove" -o "$1" = "upgrade" ]; then
     pam-auth-update --package --remove pam-mobian
 fi
 
-if [ "$1" = "remove" ]; then
-    # Remove USB gadget network connection
-    nmcli connection delete USB
-
-    # Disable automatic start of USB gadget
-    systemctl disable mobian-usb-gadget
-fi
-
 #DEBHELPER#

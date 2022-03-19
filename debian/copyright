@@ -4,10 +4,6 @@ Files: *
 Copyright: 2020 Arnaud Ferraris <arnaud.ferraris@gmail.com>
 License: GPL-3.0-or-later
 
-Files: debian/mobian-tweaks-common.mobian-ssh-keygen.service
-Copyright: 2020 Koen Vervloesem
-License: GPL-3.0-or-later
-
 Files: common/pam-configs/*
 Copyright: 2020 Sebastian Spaeth
 License: GPL-3.0-or-later

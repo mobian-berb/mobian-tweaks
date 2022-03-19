@@ -11,12 +11,10 @@ Rules-Requires-Root: no
 
 Package: mobian-tweaks-common
 Architecture: all
-Depends: f2fs-tools,
-         e2fsprogs,
-         btrfs-progs,
+Depends: libglib2.0-bin,
+         libpam-runtime,
+         mobile-initramfs-tools,
          mobile-tweaks-common,
-         network-manager,
-         zram-tools,
          ${misc:Depends}
 Conflicts: mobian-tweaks
 Provides: mobian-tweaks
