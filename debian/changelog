@@ -1,3 +1,17 @@
+mobian-tweaks (0.5.2) unstable; urgency=medium
+
+  * common: split out initramfs and USB gadget scripts.
+  * common: drop .desktop files diversions.
+  * common: drop polkit policy for ModemManager and add config fragment.
+  * phosh: drop unneeded bits and update the list of adaptive apps.
+  * debian: remove salsa-ci.yml.
+  * d/control: update URLs and package descriptions
+  * common: add global config for u-boot-menu
+  * d/control: ensure we break current -tweaks packages.
+  * d/control: tie mobian-tweaks-phosh to mobian-tweaks-common version.
+
+ -- Arnaud Ferraris <arnaud.ferraris@collabora.com>  Wed, 23 Mar 2022 12:38:18 +0100
+
 mobian-tweaks (0.5.1) unstable; urgency=medium
 
   * phosh: make phosh unlock gnome-keyring on session startup
