@@ -19,6 +19,12 @@ Depends: libglib2.0-bin,
 Conflicts: mobian-tweaks
 Provides: mobian-tweaks
 Replaces: mobian-tweaks
+Breaks: mobian-librem5-tweaks (<< 0.1.5~),
+        mobian-oneplus6-tweaks (<< 0.2.7~),
+        mobian-pinephone-tweaks (<< 0.56~),
+        mobian-pinetab-tweaks (<< 0.15~),
+        mobian-pocof1-tweaks (<< 0.3.2~),
+        pinephonepro-support (<< 0.1.2~),
 Description: Mobian -- Generic configuration settings
  Mobian is a Debian blend targetting mobile devices, such as phones and tablets.
  .
