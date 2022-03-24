@@ -37,7 +37,7 @@ Description: Mobian -- Generic configuration settings
 Package: mobian-tweaks-phosh
 Architecture: all
 Depends: dconf-cli,
-         mobian-tweaks-common,
+         mobian-tweaks-common (= ${binary:Version}),
          adduser,
          ${misc:Depends}
 Description: Mobian -- Configuration settings for Phosh
