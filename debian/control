@@ -13,7 +13,6 @@ Package: mobian-tweaks-common
 Architecture: all
 Depends: libglib2.0-bin,
          libpam-runtime,
-         mobile-initramfs-tools,
          mobile-tweaks-common,
          ${misc:Depends}
 Conflicts: mobian-tweaks
