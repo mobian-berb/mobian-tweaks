@@ -1,3 +1,11 @@
+mobian-tweaks (0.5.3) unstable; urgency=medium
+
+  * mobian-tweaks-common: drop dependency on mobile-initramfs-tools.
+    This is no longer required for most devices as we now leverage
+    `systemd-repart` and `systemd-growfs` for resizing the root partition.
+
+ -- Arnaud Ferraris <aferraris@debian.org>  Sun, 11 Sep 2022 16:44:10 +0200
+
 mobian-tweaks (0.5.2) unstable; urgency=medium
 
   * common: split out initramfs and USB gadget scripts.
