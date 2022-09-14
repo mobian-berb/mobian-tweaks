@@ -1,2 +1,2 @@
 [sm.puri.phosh]
-force-adaptive=['org.gnome.Fractal.desktop', 'org.gnome.Todo.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.Geary.desktop', 'org.gnome.Software.desktop', 'telegramdesktop.desktop', 'org.gnome.Totem.desktop', 'nl.brixit.powersupply.desktop', 'com.github.bilelmoussaoui.Authenticator.desktop', 'firefox-esr.desktop', 'nheko.desktop']
+force-adaptive=['org.gnome.Calendar.desktop', 'org.gnome.Fractal.desktop', 'org.gnome.Todo.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.Geary.desktop', 'org.gnome.Software.desktop', 'telegramdesktop.desktop', 'org.gnome.Totem.desktop', 'nl.brixit.powersupply.desktop', 'com.github.bilelmoussaoui.Authenticator.desktop', 'firefox-esr.desktop', 'nheko.desktop']
