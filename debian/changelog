@@ -1,3 +1,9 @@
+mobian-tweaks (0.5.4) unstable; urgency=medium
+
+  * phosh: override: mark gnome-calendar as adaptive
+
+ -- Arnaud Ferraris <aferraris@debian.org>  Wed, 14 Sep 2022 11:12:46 +0200
+
 mobian-tweaks (0.5.3) unstable; urgency=medium
 
   * mobian-tweaks-common: drop dependency on mobile-initramfs-tools.
